@@ -1,16 +1,148 @@
 <!doctype html>
-<html lang="en">
-
-  <head>
+<html lang="tr">
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./workintech.svg" />
+    <link rel="icon" type="image/svg+xml" href="/images/iteration-1-images/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workintech + 🍕</title>
-  </head>
-
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-
+    <title>Teknolojik Yemekler - Pizza</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Quattrocento:wght@400;700&family=Roboto+Condensed:wght@300;400;700&family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --yellow: #FDC913;
+            --light-gray: #5F5F5F;
+            --dark-gray: #292929;
+            --red: #CE2829;
+            --beige: #FAF7F2;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            background-color: var(--red);
+            color: white;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .logo {
+            font-family: 'Satisfy', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .title {
+            font-family: 'Barlow', sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--yellow);
+            color: var(--dark-gray);
+            padding: 0.8rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-family: 'Barlow', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .pizza-img {
+            max-width: 600px;
+            margin: 2rem auto;
+            display: block;
+        }
+        
+        .decorative-elements img {
+            position: absolute;
+            max-width: 50px;
+        }
+        
+        .basil-1 {
+            top: 10%;
+            left: 15%;
+        }
+        
+        .basil-2 {
+            bottom: 30%;
+            right: 20%;
+        }
+        
+        .chili-1 {
+            top: 20%;
+            right: 15%;
+            transform: rotate(45deg);
+        }
+        
+        .chili-2 {
+            bottom: 40%;
+            left: 10%;
+            transform: rotate(-30deg);
+        }
+        
+        .mushroom {
+            top: 50%;
+            right: 25%;
+        }
+        
+        .garlic {
+            bottom: 20%;
+            left: 30%;
+        }
+        
+        .background-pattern {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">Teknolojik Yemekler</h1>
+        <h2 class="title">KOD AÇIKTIRIR<br>PİZZA, DOYURUR</h2>
+        <a href="#" class="btn">AÇIKTIM</a>
+        
+        <img src="/images/pizza.png" alt="Lezzetli Pizza" class="pizza-img">
+        
+        <div class="decorative-elements">
+            <img src="/images/basil.png" alt="" class="basil-1">
+            <img src="/images/basil.png" alt="" class="basil-2">
+            <img src="/images/chili.png" alt="" class="chili-1">
+            <img src="/images/chili.png" alt="" class="chili-2">
+            <img src="/images/mushroom.png" alt="" class="mushroom">
+            <img src="/images/garlic.png" alt="" class="garlic">
+        </div>
+        
+        <img src="/images/pattern.png" alt="" class="background-pattern">
+    </div>
+</body>
 </html>

@@ -1,34 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import workintech from '/workintech.svg'
 import './App.css'
+import logo from '../images/iteration-1-images/logo.svg'
+import banner from '../images/iteration-1-images/home-banner.png'
+import basil from '../images/iteration-2-images/basil.png'
+import chili from '../images/iteration-2-images/chili.png'
+import garlic from '../images/iteration-2-images/garlic.png'
+import mushroom from '../images/iteration-2-images/mushroom.png'
+import pattern from '../images/iteration-2-images/pattern.png'
+import pizza from '../images/iteration-2-images/pizza.png'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://github.com/Workintech/fsweb-s7-challenge-pizza" target="_blank">
-          <img src={workintech} className="logo" alt="Workintech logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Workintech + 🍕</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          Absolute Acı Pizza sayısı {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Workintech or Pizza logos to learn more
-      </p>
-    </>
+    <div className="container">
+      <h1 className="logo">Teknolojik Yemekler</h1>
+      <h2 className="title">KOD AÇIKTIRIR<br/>PİZZA, DOYURUR</h2>
+      <a href="#" className="btn">AÇIKTIM</a>
+      
+      <img src={banner} alt="Pizza Banner" className="banner-img" />
+      
+      <img src={pattern} alt="" className="background-pattern" />
+    </div>
   )
 }
 
